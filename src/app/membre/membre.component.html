@@ -1,0 +1,32 @@
+<!--wrapper-->
+<div class="wrapper">
+
+  <!--sidebar wrapper -->
+  <router-outlet name="sidebar"></router-outlet>
+  <!--end sidebar wrapper -->
+
+  <!--start header -->
+  <!-- name - permet de specifier le out-let que l'on veut -->
+  <router-outlet name="header"></router-outlet>
+  <!--end header -->
+
+  <!-- start router-outlet -->
+  <router-outlet></router-outlet>
+  <!--end router-outlet -->
+
+  <!--start overlay-->
+  <div class="overlay toggle-icon"></div>
+  <!--end overlay-->
+
+  <!--Start Back To Top Button-->
+  <router-outlet name="backtopbutton"></router-outlet>
+  <!--End Back To Top Button-->
+
+  <router-outlet name="footer"></router-outlet>
+
+</div>
+<!--end wrapper-->
+
+<!--start switcher-->
+<router-outlet name="switcher"></router-outlet>
+<!--end switcher-->
